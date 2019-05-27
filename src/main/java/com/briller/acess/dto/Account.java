@@ -8,16 +8,18 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
+import com.briller.acess.configs.audit.AuditFields;
+
 @Entity
 @Table(name = "ACCOUNT")
-public class Account {
+public class Account extends AuditFields<String> {
 
 	@Id
 	@Column(name = "account_id")
 	private int accountId;
 
 	@Column(name = "account_name")
-	private String AccountName;
+	private String accountName;
 
 	@Column(name = "account_code")
 	private String accountCode;
@@ -56,7 +58,7 @@ public class Account {
 	}
 
 	public String getAccountName() {
-		return AccountName;
+		return accountName;
 	}
 
 	public AccountCsatSummary getAccountCsatSummary() {
@@ -68,7 +70,7 @@ public class Account {
 	}
 
 	public void setAccountName(String accountName) {
-		AccountName = accountName;
+		this.accountName = accountName;
 	}
 
 	public String getAccountCode() {
