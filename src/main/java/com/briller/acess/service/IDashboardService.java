@@ -1,15 +1,15 @@
 package com.briller.acess.service;
 
-import java.util.LinkedHashMap;
-import java.util.List;
+import com.briller.acess.dto.RequestParamDashboard;
+import com.briller.acess.response.Response;
 
 
 public interface IDashboardService {
 
 	void getDashBoardMenuItems(String loggedinUser);
 
-	void getTeamRelationshipHealthForDashboard();
-
-	List<LinkedHashMap<String, Object>> getDashboardData();
-
+	Response getDashboardData();
+	
+	Response getTeamRelationshipHealthForDashboard(RequestParamDashboard requestParam);
+	
 }

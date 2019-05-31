@@ -19,10 +19,10 @@ public class CrmAccountData {
 	private int accountId;
 
 	@Column(name = "REVENUE")
-	private String revenue;
+	private double revenue;
 
 	@Column(name = "MARGIN")
-	private String margin;
+	private int margin;
 
 	@Column(name = "STATUS")
 	private String status;
@@ -46,19 +46,19 @@ public class CrmAccountData {
 		this.accountId = accountId;
 	}
 
-	public String getRevenue() {
+	public double getRevenue() {
 		return revenue;
 	}
 
-	public void setRevenue(String revenue) {
+	public void setRevenue(double revenue) {
 		this.revenue = revenue;
 	}
 
-	public String getMargin() {
+	public int getMargin() {
 		return margin;
 	}
 
-	public void setMargin(String margin) {
+	public void setMargin(int margin) {
 		this.margin = margin;
 	}
 
