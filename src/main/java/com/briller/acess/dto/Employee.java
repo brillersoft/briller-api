@@ -12,8 +12,7 @@ import com.briller.acess.configs.audit.AuditFields;
 @Table(name = "EMPLOYEE")
 public class Employee extends AuditFields<String> {
 
-	@Version
-	private Integer versionNum;
+	
 
 	@Id
 	@Column(name = "EMPLOYEE_ID")
@@ -30,6 +29,9 @@ public class Employee extends AuditFields<String> {
 
 	@Column(name = "STATUS")
 	private String status;
+	
+	@Version
+	private Integer versionNum;
 
 	public Integer getEmployeeId() {
 		return employeeId;
