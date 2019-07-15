@@ -26,7 +26,6 @@ public class Swagger2Config {
 		return new ApiInfoBuilder().title("Spring Boot REST API").description("Batch Processing REST API's")
 				.contact(new Contact("Abhishek Kumar Gupta", "www.demo.com", "abhishek.gupta02@irissoftware.com"))
 				.contact(new Contact("Mayank Agrawal", "www.test.com", "mayank.agarwal@irissoftware.com"))
-				.license("Apache 2.0").licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html").version("1.0.0")
-				.build();
+				.license("Apache 2.0").build();
 	}
 }
